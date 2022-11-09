@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Bài tập 1 -->
+    <h1 class="bg-danger w-25">Bài 1: Quản lý tuyển sinh</h1>
+    <div class="row w-25">
+      <input id="point" type="text" placeholder="Điểm chuẩn" />
+      <input id="exemScore1" type="text" placeholder="Điểm môn 1" />
+      <input id="exemScore2" type="text" placeholder="Điểm môn 2" />
+      <input id="exemScore3" type="text" placeholder="Điểm môn 3" />
+    </div>
+    <select name="zone" id="zone">
+      <option value="khuvucA" id="khuvucA">khu vực A</option>
+      <option value="khuvucB" id="khuvucB">khu vực B</option>
+      <option value="khuvucC" id="khuvucC">khu vực C</option>
+    </select>
+    <select name="people" id="people">
+      <option value="p1" id="p1">đối tượng ưu tiên 1</option>
+      <option value="p2" id="p2">đối tượng ưu tiên 2</option>
+      <option value="p3" id="p3">đối tượng ưu tiên 3</option>
+    </select>
+    <button onclick="result()">Kết Quả</button>
+    <p class="alert alert-success" id="info"></p>
+    <hr />
+    <br />
+    <!-- Bài tập 2 -->
+    <h1 class="bg-danger w-25">Bài 2: Tính tiền điện</h1>
+
+    <input type="text" placeholder="Nhập tên" id="name" />
+    <input type="text" placeholder="Nhập Kw tiêu thụ" id="electricity" />
+    <button onclick="electricityBill()">Tính tiền</button>
+    <p class="alert alert-success" id="info1"></p>
+    <hr />
+    <br />
+    <!-- Bài tập 3 -->
+    <h1 class="bg-danger w-25">Bài 3: Tính thuế thu nhập cá nhân</h1>
+    <div class="row w-25">
+      <input type="text" placeholder="Nhập họ tên" id="fullName" />
+      <input
+        type="text"
+        placeholder="Tổng thu nhập hàng năm"
+        id="salaryOfYear"
+      />
+      <input type="text" placeholder="Số người phụ thuộc" id="numberOfPeople" />
+    </div>
+
+    <button onclick="totalIncome()">Kết Quả</button>
+    <p class="alert alert-success" id="info2"></p>
+
+    <hr />
+    <br />
+    <!-- Bài tập 4 -->
+    <h1 class="bg-danger w-25">Bài 4: Tính tiền cáp</h1>
+
+    <select name="" id="in4">
+      <option value="Doanh Nghiệp" id="company">Doanh Nghiệp</option>
+      <option value="Nhà Dân" id="sim">Nhà Dân</option>
+    </select>
+    <div class="row w-25">
+      <input type="text" placeholder="Nhập mã khách hàng" id="maKH" />
+      <input type="text" placeholder="Số kênh cao cấp" id="soKenhCC" />
+      <input type="text" placeholder="Số kết nối" id="soKetNoi" />
+    </div>
+
+    <button onclick="price()">Kết Quả</button>
+    <p class="alert alert-success" id="info3"></p>
+    <script src="./main.js"></script>
+  </body>
+</html>
